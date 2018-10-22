@@ -52,8 +52,10 @@ public class MainActivity extends AppCompatActivity implements
 
     private void setupWeb3() {
         WebView.setWebContentsDebuggingEnabled(BuildConfig.DEBUG);
-        web3.setChainId(1);
-        web3.setRpcUrl("https://mainnet.infura.io/llyrtzQ3YhkdESt2Fzrk");
+//        web3.setChainId(1);
+//        web3.setRpcUrl("https://mainnet.infura.io/llyrtzQ3YhkdESt2Fzrk");
+        web3.setChainId(42);
+        web3.setRpcUrl("https://kovan.infura.io/EjkWWVCqSgNOgYy7BdNj");
         web3.setWalletAddress(new Address("0x242776e7ca6271e416e737adffcfeb22e8dc1b3c"));
 
         web3.setOnSignMessageListener(message ->
